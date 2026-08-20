@@ -1,5 +1,5 @@
 <!--
-  name: foundation.md
+  name: foundation_template.md
   description: Design Foundation Template — Design Tokens for [Project Name].
                Fill in all [PLACEHOLDER] values before starting UI design work.
                This file is the single source of truth for all visual tokens.

@@ -16,6 +16,11 @@ triggers:
   - "phân tích UX"
   - "thiết kế UI"
   - "phân tích giao diện"
+  - "review UI"
+  - "audit UX/UI"
+  - "đánh giá UX/UI"
+  - "kiểm thử accessibility"
+  - "báo cáo UX/UI"
 ---
 
 # Skill: UX/UI Analysis & Design
@@ -292,9 +297,17 @@ Input Field:
 
 ---
 
-### Step 6 — Heuristic Evaluation (UX Audit)
+### Step 6 — Heuristic Evaluation & Accessibility Audit (UX Audit)
 
-**Goal:** Critique an existing or newly designed interface against the 13 UX principles.
+**Goal:** Critique an existing or newly designed interface against C.R.A.P. framework, 13 Core UX principles, and WCAG 2.1 AA accessibility standards.
+
+> **Mandatory Template:** When conducting a UX/UI audit or review, strictly follow the format in [`resources/review_template.md`](.agent/skills/design-ux-ui/resources/review_template.md).
+> 
+> **Execution Steps:**
+> 1. Run color contrast checks via `node .agent/skills/design-ux-ui/scripts/contrast_checker.js <bg> <fg>`.
+> 2. Search codebase for `Semantics`, `aria-label`, `IconButton`, and touch target constraints.
+> 3. Verify design token usage and detect raw widget vs common widget fragmentation.
+> 4. Fill in all sections: C.R.A.P. Analysis (with Mermaid graph), 13 Core UX Principles table, Accessibility Audit (WCAG 2.1 AA), Heuristic Evaluation report table, and Actionable Roadmap.
 
 **Severity Ratings:**
 
@@ -305,20 +318,6 @@ Input Field:
 | 2 | Minor | Low-priority fix |
 | 3 | Major | High-priority -- impacts task completion |
 | 4 | Catastrophic | Must fix before launch |
-
-**Heuristic Evaluation Report Template:**
-
-```markdown
-## Heuristic Evaluation: [Screen Name]
-**Evaluator:** [Agent/User]
-**Date:** YYYY-MM-DD
-
-| # | Heuristic Violated          | Description of Issue             | Severity | Recommendation          |
-|---|-----------------------------|----------------------------------|----------|-------------------------|
-| 1 | Feedback                    | No loading state on API call     | 3        | Add spinner + message   |
-| 2 | Error Prevention & Recovery | Delete action has no confirm     | 4        | Add confirmation dialog |
-| 3 | Visual Hierarchy            | Submit same size as Cancel btn   | 2        | Increase primary size   |
-```
 
 ---
 
@@ -425,6 +424,11 @@ When creating design documentation for a project, follow this directory structur
 │   ├── wireframes/              # Low-fidelity layout sketches
 │   ├── mockups/                 # High-fidelity screen designs
 │   └── handoff/                 # Developer annotation files
+├── resources/
+│   ├── foundation_template.md   # Design tokens foundation template
+│   └── review_template.md       # UX/UI & Accessibility audit report template
+├── scripts/
+│   └── contrast_checker.js      # WCAG contrast ratio calculation script
 └── SKILL.md                     # This skill file
 ```
 
