@@ -162,7 +162,11 @@ PYTHON_MEANINGFUL_ASSERT_NAMES = {
     'assertIsNone', 'assertIsNotNone', 'assertRaises', 'assertRaisesRegex',
     'assertAlmostEqual', 'assertNotAlmostEqual', 'assertGreater',
     'assertGreaterEqual', 'assertLess', 'assertLessEqual',
-    'assert_called_with', 'assert_called_once_with', 'assert_any_call',
+    'assert_called', 'assert_called_once', 'assert_called_with',
+    'assert_called_once_with', 'assert_any_call', 'assert_has_calls',
+    'assert_not_called', 'assert_awaited', 'assert_awaited_once',
+    'assert_awaited_with', 'assert_awaited_once_with', 'assert_any_await',
+    'assert_has_awaits', 'assert_not_awaited', 'raises',
 }
 
 # Trivial assertion patterns (regex on raw assertion text)
