@@ -1,29 +1,29 @@
-# Ngân hàng câu hỏi — Giai đoạn 2 (Solution/System Analysis)
+# Question Bank — Phase 2 (Solution/System Analysis)
 
-Chỉ bắt đầu sau khi đã có Vision & Scope. Hỏi theo module, không hỏi tất cả module cùng lúc. Đây là điểm khởi đầu — khi phát hiện business rule mơ hồ, NFR thiếu con số, hoặc actor/use case có khả năng xung đột quyền hạn, đào sâu ngay thay vì ghi nhận rồi đi tiếp. Chủ động đề xuất khía cạnh domain-specific (multi-tenancy, rate limiting, data residency...) phù hợp với loại hệ thống đang phân tích, không chỉ giới hạn trong các câu liệt kê dưới đây.
+Only begin after the Vision & Scope document is established. Ask per module — do not cover all modules at once. This is a starting point — when a business rule is vague, an NFR lacks a specific threshold, or actor/use case authorization conflicts arise, dig deeper immediately rather than recording it and moving on. Proactively suggest domain-specific aspects (multi-tenancy, rate limiting, data residency…) appropriate to the system type being analyzed, not just what is listed below.
 
-## Nhóm A — Chức năng theo module
-- Trong module [X], các thao tác chính người dùng thực hiện là gì? (liệt kê theo hành động, VD: tạo, sửa, xóa, tìm kiếm, export...)
-- Ai (role nào) được phép thực hiện thao tác này?
-- Có bước xác thực/phê duyệt nào trước khi thao tác hoàn tất không?
+## Group A — Features by Module
+- In module [X], what are the main actions the user performs? (list by operation, e.g., create, edit, delete, search, export...)
+- Which role(s) are permitted to perform this action?
+- Are there any approval or validation steps required before an action is finalized?
 
-## Nhóm B — Business rules
-- Có điều kiện/ràng buộc logic nào áp dụng cho chức năng này không? (VD: giới hạn số lượng, điều kiện giảm giá, validation đặc biệt)
-- Có trường hợp ngoại lệ nào cần xử lý riêng không?
+## Group B — Business Rules
+- Are there any logical conditions or constraints that apply to this feature? (e.g., quantity limits, discount conditions, special validation)
+- Are there any exceptional cases that require separate handling?
 
-## Nhóm C — Non-functional requirements
-- Hệ thống cần xử lý bao nhiêu người dùng đồng thời / bao nhiêu request mỗi giây?
-- Có yêu cầu thời gian phản hồi cụ thể không (VD: < 2s)?
-- Dữ liệu nhạy cảm nào cần mã hóa/kiểm soát truy cập đặc biệt?
-- Yêu cầu uptime/SLA là bao nhiêu?
-- Hệ thống cần chạy trên thiết bị/trình duyệt nào?
+## Group C — Non-Functional Requirements
+- How many concurrent users / requests per second must the system handle?
+- Are there specific response time requirements (e.g., < 2 seconds)?
+- What sensitive data needs encryption or special access controls?
+- What are the uptime / SLA requirements?
+- What devices or browsers must the system support?
 
-## Nhóm D — Cấu trúc dữ liệu
-- Các entity chính trong hệ thống là gì (VD: User, Order, Product)?
-- Quan hệ giữa các entity đó như thế nào (1-1, 1-nhiều, nhiều-nhiều)?
-- Có dữ liệu nào cần đồng bộ với hệ thống bên ngoài không?
+## Group D — Data Structure
+- What are the primary entities in the system (e.g., User, Order, Product)?
+- What are the relationships between those entities (1-to-1, 1-to-many, many-to-many)?
+- Is there any data that needs to be synchronized with an external system?
 
-## Nhóm E — Actor & Use case
-- Có bao nhiêu loại actor (người dùng/hệ thống ngoài) tương tác với hệ thống?
-- Với mỗi actor, họ cần thực hiện những use case chính nào?
-- Có luồng nào actor này tương tác gián tiếp qua actor khác không (VD: Admin duyệt yêu cầu của User)?
+## Group E — Actors & Use Cases
+- How many actor types (users / external systems) interact with the system?
+- For each actor, what are their primary use cases?
+- Are there any flows where one actor interacts indirectly through another actor (e.g., Admin approves a User's request)?

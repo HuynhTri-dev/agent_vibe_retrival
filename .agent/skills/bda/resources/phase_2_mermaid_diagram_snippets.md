@@ -1,19 +1,19 @@
-# Mermaid Diagram Snippets cho SA Documentation
+# Mermaid Diagram Snippets for SA Documentation
 
-Dùng đúng loại diagram cho đúng mục đích. Đặt code block ```mermaid``` trong file .md, hầu hết renderer (GitHub, GitLab, VSCode preview...) hiển thị trực tiếp.
+Use the right diagram type for the right purpose. Place code blocks with ` ```mermaid ``` ` in your `.md` files — most renderers (GitHub, GitLab, VSCode preview…) will display them natively.
 
 ## 1. Use Case Diagram
 
-Mermaid không có use case notation chuẩn UML, mô phỏng bằng `flowchart` với actor là node hình người (dùng subgraph để nhóm use case trong hệ thống):
+Mermaid does not have a native UML use case notation; simulate it using `flowchart` with actor nodes (use subgraphs to group use cases within the system boundary):
 
 ```mermaid
 flowchart LR
-    Actor1((Khách hàng))
+    Actor1((Customer))
     Actor2((Admin))
-    subgraph System[Hệ thống Đặt hàng]
-        UC1([Xem sản phẩm])
-        UC2([Đặt hàng])
-        UC3([Quản lý kho])
+    subgraph System[Order Management System]
+        UC1([View Products])
+        UC2([Place Order])
+        UC3([Manage Inventory])
     end
     Actor1 --> UC1
     Actor1 --> UC2
@@ -29,29 +29,29 @@ sequenceDiagram
     participant BE as Backend API
     participant DB as Database
 
-    User->>FE: Nhấn "Đăng nhập"
+    User->>FE: Click "Login"
     FE->>BE: POST /auth/login
-    BE->>DB: Kiểm tra credential
-    DB-->>BE: Kết quả
-    alt Đăng nhập thành công
+    BE->>DB: Verify credentials
+    DB-->>BE: Result
+    alt Login successful
         BE-->>FE: 200 OK + JWT token
-        FE-->>User: Chuyển tới Dashboard
-    else Sai thông tin
+        FE-->>User: Redirect to Dashboard
+    else Invalid credentials
         BE-->>FE: 401 Unauthorized
-        FE-->>User: Hiển thị lỗi
+        FE-->>User: Display error message
     end
 ```
 
-## 3. Activity Diagram (dùng flowchart)
+## 3. Activity Diagram (using flowchart)
 
 ```mermaid
 flowchart TD
-    Start([Bắt đầu]) --> A[Người dùng nhập thông tin]
-    A --> B{Thông tin hợp lệ?}
-    B -->|Có| C[Lưu vào hệ thống]
-    B -->|Không| D[Hiển thị lỗi]
+    Start([Start]) --> A[User enters information]
+    A --> B{Information valid?}
+    B -->|Yes| C[Save to system]
+    B -->|No| D[Display error]
     D --> A
-    C --> End([Kết thúc])
+    C --> End([End])
 ```
 
 ## 4. ERD (Entity Relationship Diagram)
@@ -80,31 +80,31 @@ erDiagram
     }
 ```
 
-## 5. Wireframe (mô phỏng bằng block layout)
+## 5. Wireframe (simulated with block layout)
 
-Mermaid không có wireframe engine thật — dùng `flowchart` với các box vuông đại diện vùng layout, ghi rõ đây là low-fidelity mockup, không phải UI thật. Nếu người dùng cần độ chi tiết cao hơn (màu sắc, spacing thật), đề xuất chuyển sang visualizer/HTML mockup thay vì Mermaid.
+Mermaid does not have a real wireframe engine — use `flowchart` with rectangular boxes representing layout regions, and clearly note that this is a low-fidelity mockup, not a real UI. If the user needs higher fidelity (actual colors, spacing), recommend switching to a visualization tool or HTML mockup rather than Mermaid.
 
 ```mermaid
 flowchart TD
-    subgraph Screen["Màn hình: Trang chủ"]
+    subgraph Screen["Screen: Home Page"]
         direction TB
         Header["Header: Logo | Menu | Avatar"]
-        Banner["Banner quảng cáo"]
-        subgraph Content["Nội dung chính"]
+        Banner["Promotional Banner"]
+        subgraph Content["Main Content"]
             direction LR
-            Sidebar["Sidebar: Bộ lọc"]
-            ProductList["Danh sách sản phẩm (grid)"]
+            Sidebar["Sidebar: Filters"]
+            ProductList["Product List (grid)"]
         end
-        Footer["Footer: Liên kết | Bản quyền"]
+        Footer["Footer: Links | Copyright"]
     end
     Header --> Banner --> Content --> Footer
 ```
 
-## Nguyên tắc chọn diagram
-| Mục đích | Diagram |
+## Diagram Selection Guide
+| Purpose | Diagram Type |
 |---|---|
-| Ai làm gì với hệ thống | Use Case |
-| Luồng tương tác giữa các component theo thời gian | Sequence |
-| Luồng xử lý nghiệp vụ / quyết định | Activity (hoặc BPMN-style flowchart) |
-| Cấu trúc dữ liệu / quan hệ bảng | ERD |
-| Bố cục màn hình mức thô | Block-layout flowchart (không thay thế được Figma) |
+| Who does what with the system | Use Case |
+| Interaction flow between components over time | Sequence |
+| Business process flow / decision logic | Activity (or BPMN-style flowchart) |
+| Data structure / table relationships | ERD |
+| Screen layout at a rough level | Block-layout flowchart (not a substitute for Figma) |

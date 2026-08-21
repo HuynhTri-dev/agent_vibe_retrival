@@ -1,33 +1,33 @@
 # Vision and Scope Document
 
-> Tham chiếu: IIBA BABOK v3. Mục đích: xác định ranh giới rõ ràng để tránh scope creep. Mỗi mục In-scope/Out-of-scope phải cụ thể, không dùng câu mơ hồ kiểu "hỗ trợ mọi trường hợp".
+> Reference: IIBA BABOK v3. Purpose: establish clear boundaries to prevent scope creep. Every In-scope / Out-of-scope item must be specific — do not use vague language such as "supports all scenarios."
 
-## 1. Tầm nhìn (Vision Statement)
-Một đoạn ngắn (2-4 câu) mô tả: hệ thống này là gì, dành cho ai, và giá trị cốt lõi nó mang lại — theo công thức:
+## 1. Vision Statement
+A short paragraph (2–4 sentences) describing: what this system is, who it is for, and the core value it delivers — using the formula:
 
-> Đối với [đối tượng người dùng mục tiêu], những người [có nhu cầu/vấn đề], [tên hệ thống] là một [loại sản phẩm] mà [lợi ích chính]. Không giống như [giải pháp thay thế hiện tại], sản phẩm của chúng ta [điểm khác biệt].
+> For [target user group], who [have this need/problem], [system name] is a [type of product] that [primary benefit]. Unlike [current alternative solution], our product [key differentiator].
 
-## 2. Phạm vi trong dự án (In-scope)
-Liệt kê các module/tính năng/chức năng sẽ được xây dựng trong dự án này:
+## 2. In-Scope
+List the modules, features, and functions that will be built in this project:
 - [ ]
 - [ ]
 
-## 3. Phạm vi ngoài dự án (Out-of-scope)
-Liệt kê rõ những gì KHÔNG được xây dựng ở phase này (để tránh tranh cãi sau này):
+## 3. Out-of-Scope
+Explicitly list what will NOT be built in this phase (to prevent future disputes):
 - [ ]
 - [ ]
 
-## 4. Ranh giới hệ thống (System Boundary)
-Mô tả các hệ thống/bên thứ ba mà hệ thống này sẽ tương tác (nhưng không tự phát triển): API bên ngoài, hệ thống nội bộ khác, thiết bị phần cứng...
+## 4. System Boundary
+Describe the external systems and third parties this system will interact with (but not develop): external APIs, other internal systems, hardware devices...
 
-## 5. Giả định (Assumptions)
+## 5. Assumptions
 -
 
-## 6. Ràng buộc (Constraints)
-- Kỹ thuật:
-- Ngân sách/Thời gian:
-- Pháp lý/Compliance:
+## 6. Constraints
+- Technical:
+- Budget / Timeline:
+- Legal / Compliance:
 
-## 7. Tiêu chí thành công của dự án (Success Criteria)
-Điều kiện để coi dự án hoàn thành đạt yêu cầu (khác với success metrics kinh doanh ở BRD — đây là tiêu chí bàn giao):
+## 7. Project Success Criteria
+Conditions under which the project is considered complete and accepted (distinct from business success metrics in the BRD — these are delivery acceptance criteria):
 -

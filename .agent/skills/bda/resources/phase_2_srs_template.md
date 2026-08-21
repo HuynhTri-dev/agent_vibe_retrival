@@ -1,53 +1,53 @@
 # Software Requirements Specification (SRS)
 
-> Tham chiếu: IEEE Std 830-1998. Mỗi requirement PHẢI có ID duy nhất, verifiable (đo lường/kiểm thử được), unambiguous. Tránh câu chung chung như "hệ thống phải nhanh" — phải định lượng.
+> Reference: IEEE Std 830-1998. Each requirement MUST have a unique ID, be verifiable (measurable / testable), and be unambiguous. Avoid generic statements such as "the system must be fast" — all requirements must be quantified.
 
-## 1. Giới thiệu
-### 1.1 Mục đích
-### 1.2 Phạm vi sản phẩm
-Tóm tắt lại In-scope từ Vision & Scope Document.
-### 1.3 Định nghĩa, từ viết tắt
-### 1.4 Tài liệu tham chiếu
-Link tới BRD, Vision & Scope tương ứng.
+## 1. Introduction
+### 1.1 Purpose
+### 1.2 Product Scope
+Summarize In-scope items from the Vision & Scope Document.
+### 1.3 Definitions & Abbreviations
+### 1.4 References
+Link to the corresponding BRD and Vision & Scope Document.
 
-## 2. Mô tả tổng quan
-### 2.1 Bối cảnh sản phẩm (Product Perspective)
-### 2.2 Chức năng sản phẩm (tóm tắt cấp cao — chi tiết ở FRD)
-### 2.3 Đặc điểm người dùng (User Classes)
-| Nhóm người dùng | Đặc điểm | Quyền hạn |
+## 2. Overall Description
+### 2.1 Product Perspective
+### 2.2 Product Functions (high-level summary — details in the FRD)
+### 2.3 User Classes
+| User Group | Characteristics | Access Rights |
 |---|---|---|
 | | | |
-### 2.4 Ràng buộc chung
-### 2.5 Giả định & phụ thuộc
+### 2.4 General Constraints
+### 2.5 Assumptions & Dependencies
 
-## 3. Yêu cầu phi chức năng (Non-Functional Requirements)
+## 3. Non-Functional Requirements (NFRs)
 
-### 3.1 Hiệu năng (Performance)
-| ID | Mô tả | Ngưỡng đo lường |
+### 3.1 Performance
+| ID | Description | Measurable Threshold |
 |---|---|---|
-| NFR-001 | | VD: Response time < 2s với 95th percentile |
+| NFR-001 | | Example: Response time < 2s at 95th percentile |
 
-### 3.2 Bảo mật (Security)
-| ID | Mô tả | Tiêu chuẩn tham chiếu |
+### 3.2 Security
+| ID | Description | Reference Standard |
 |---|---|---|
 | NFR-0xx | | |
 
-### 3.3 Độ khả dụng (Availability/Reliability)
-| ID | Mô tả | Ngưỡng |
+### 3.3 Availability / Reliability
+| ID | Description | Threshold |
 |---|---|---|
-| NFR-0xx | | VD: Uptime 99.9% |
+| NFR-0xx | | Example: 99.9% uptime |
 
-### 3.4 Khả năng mở rộng (Scalability)
-### 3.5 Khả năng bảo trì (Maintainability)
-### 3.6 Khả năng sử dụng (Usability)
-### 3.7 Tương thích (Compatibility)
-Thiết bị/trình duyệt/hệ điều hành cần hỗ trợ.
+### 3.4 Scalability
+### 3.5 Maintainability
+### 3.6 Usability
+### 3.7 Compatibility
+Devices, browsers, and operating systems that must be supported.
 
-## 4. Yêu cầu giao diện ngoài (External Interface Requirements)
-### 4.1 Giao diện người dùng
-### 4.2 Giao diện phần cứng
-### 4.3 Giao diện phần mềm / API bên thứ ba
-### 4.4 Giao diện truyền thông (network protocol...)
+## 4. External Interface Requirements
+### 4.1 User Interface
+### 4.2 Hardware Interface
+### 4.3 Software / Third-Party API Interface
+### 4.4 Communication Interface (network protocol, etc.)
 
-## 5. Ma trận truy xuất tóm tắt
-Tham chiếu đầy đủ nằm ở `rtm_template.csv` — không lặp lại toàn bộ ở đây, chỉ liệt kê nhóm requirement chính đã có trong RTM.
+## 5. Traceability Summary
+Full traceability details are in `phase_2_rtm_template.csv` — do not repeat everything here; only list the main requirement groups already captured in the RTM.

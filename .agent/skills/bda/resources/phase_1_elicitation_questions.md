@@ -1,29 +1,29 @@
-# Ngân hàng câu hỏi — Giai đoạn 1 (Business Analysis)
+# Question Bank — Phase 1 (Business Analysis)
 
-Đây là **điểm khởi đầu**, không phải script phải hỏi hết. Dùng theo lô 2-4 câu mỗi lượt, ưu tiên nhóm A trước. Nếu người dùng đã trả lời sẵn trong mô tả ban đầu, bỏ qua câu tương ứng. Khi câu trả lời của người dùng mơ hồ hoặc hé lộ mâu thuẫn với thông tin trước đó, dừng lại đào sâu ngay tại chỗ (hỏi follow-up cụ thể) thay vì chuyển sang câu tiếp theo trong danh sách — xem "Nguyên tắc tư duy BA" trong SKILL.md.
+This is a **starting point**, not a script to run through in full. Use 2–4 questions per turn, prioritizing Group A first. If the user has already answered a question in their initial description, skip it. When a user's answer is vague or reveals a contradiction with prior information, stop and dig deeper immediately (ask a specific follow-up) rather than moving to the next question in the list — see "Core BA Thinking Principles" in SKILL.md.
 
-## Nhóm A — Bối cảnh & Vấn đề kinh doanh
-- Vấn đề hiện tại mà tổ chức/team đang gặp phải là gì? Nó đang gây ra hậu quả cụ thể nào (mất thời gian, mất tiền, mất khách hàng...)?
-- Nếu không làm dự án này, điều gì sẽ tiếp tục xảy ra?
-- Đã có giải pháp tạm thời/thủ công nào đang dùng chưa? Vì sao chưa đủ?
+## Group A — Business Context & Problem Statement
+- What is the current problem the organization/team is facing? What specific consequences is it causing (wasted time, lost revenue, lost customers...)?
+- If this project is not undertaken, what will continue to happen?
+- Are there any temporary or manual workarounds currently in use? Why are they insufficient?
 
-## Nhóm B — Stakeholder & nhu cầu
-- Ai là người sẽ trực tiếp sử dụng hệ thống? Ai là người ra quyết định/phê duyệt?
-- Có nhóm nào bị ảnh hưởng gián tiếp không (VD: phòng ban khác, khách hàng cuối)?
-- Nhu cầu của từng nhóm có mâu thuẫn nhau không?
+## Group B — Stakeholders & Needs
+- Who will directly use the system? Who is the decision-maker / final approver?
+- Are there any groups that are indirectly affected (e.g., other departments, end customers)?
+- Do the needs of different stakeholder groups conflict with one another?
 
-## Nhóm C — Lợi ích kỳ vọng / ROI
-- Kỳ vọng cụ thể là gì: tiết kiệm bao nhiêu thời gian/chi phí, tăng bao nhiêu hiệu suất?
-- Có số liệu hiện trạng (baseline) để so sánh sau này không?
-- Lợi ích này là ngắn hạn hay chiến lược dài hạn?
+## Group C — Expected Benefits / ROI
+- What are the specific expectations: how much time/cost will be saved, how much will efficiency improve?
+- Is there any baseline data available for future comparison?
+- Are the expected benefits short-term or part of a long-term strategy?
 
-## Nhóm D — Phạm vi (Scope)
-- Trong lần triển khai đầu tiên, chức năng nào là bắt buộc phải có (must-have)?
-- Có chức năng nào cố tình để lại cho giai đoạn sau không?
-- Hệ thống có cần tích hợp với hệ thống nào đang có sẵn không?
+## Group D — Scope
+- In the first release, which features are absolutely required (must-have)?
+- Are there any features intentionally deferred to a later phase?
+- Does the system need to integrate with any existing systems?
 
-## Nhóm E — Ràng buộc & rủi ro
-- Deadline hoặc mốc thời gian quan trọng nào cần biết?
-- Ngân sách/nguồn lực có giới hạn gì đặc biệt không?
-- Có yêu cầu pháp lý/compliance nào bắt buộc (VD: bảo vệ dữ liệu cá nhân, quy định ngành)?
-- Rủi ro lớn nhất bạn lo ngại về dự án này là gì?
+## Group E — Constraints & Risks
+- What are the key deadlines or important milestones to be aware of?
+- Are there any special budget or resource limitations?
+- Are there mandatory legal/compliance requirements (e.g., personal data protection, industry regulations)?
+- What is the biggest risk you are concerned about for this project?

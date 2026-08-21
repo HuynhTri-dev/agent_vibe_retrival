@@ -1,43 +1,43 @@
 # Business Requirements Document (BRD)
 
-> Tham chiếu: IIBA BABOK v3 — Strategy Analysis. Điền tất cả mục dưới đây bằng thông tin thu thập được từ người dùng; không tự suy diễn số liệu ROI hoặc mục tiêu nếu chưa được xác nhận.
+> Reference: IIBA BABOK v3 — Strategy Analysis. Fill in all sections below with information gathered from the user; do not invent ROI figures or objectives that have not been confirmed.
 
-## 1. Thông tin dự án
-- **Tên dự án:**
-- **Ngày lập tài liệu:**
-- **Người yêu cầu / Sponsor:**
-- **Phiên bản:**
+## 1. Project Information
+- **Project Name:**
+- **Document Date:**
+- **Requester / Sponsor:**
+- **Version:**
 
-## 2. Bối cảnh & Vấn đề kinh doanh (Problem Statement)
-Mô tả vấn đề hiện tại đang gây ra chi phí/rủi ro/mất cơ hội gì cho tổ chức. Tránh mô tả giải pháp ở đây — chỉ mô tả vấn đề.
+## 2. Business Context & Problem Statement
+Describe the current problem that is causing costs, risks, or missed opportunities for the organization. Avoid describing the solution here — focus solely on the problem.
 
-## 3. Mục tiêu kinh doanh (Business Objectives)
-Liệt kê mục tiêu theo dạng đo lường được (SMART) nếu có thể:
-- Mục tiêu 1: ...
-- Mục tiêu 2: ...
+## 3. Business Objectives
+List objectives in a measurable format (SMART) where possible:
+- Objective 1: ...
+- Objective 2: ...
 
-## 4. Các bên liên quan (Stakeholders)
-| Vai trò | Tên/Bộ phận | Nhu cầu chính | Mức ảnh hưởng |
+## 4. Stakeholders
+| Role | Name / Department | Primary Need | Level of Influence |
 |---|---|---|---|
 | | | | |
 
-## 5. Lợi ích kỳ vọng (Expected Benefits / ROI)
-- Định lượng (nếu có): tiết kiệm chi phí, tăng doanh thu, giảm thời gian xử lý...
-- Định tính: cải thiện trải nghiệm, tuân thủ quy định...
+## 5. Expected Benefits / ROI
+- Quantitative (if available): cost savings, revenue increase, processing time reduction...
+- Qualitative: improved user experience, regulatory compliance...
 
-## 6. Phạm vi tổng quan (High-level Scope)
-Mô tả ngắn gọn hệ thống/giải pháp dự kiến giải quyết vấn đề gì (chi tiết in/out-scope để ở Vision & Scope Document).
+## 6. High-Level Scope
+Briefly describe the system/solution that is expected to address the problem (detailed in/out-of-scope belongs in the Vision & Scope Document).
 
-## 7. Ràng buộc & Giả định (Constraints & Assumptions)
-- Ràng buộc: ngân sách, thời gian, công nghệ bắt buộc...
-- Giả định: điều kiện được cho là đúng khi lập kế hoạch
+## 7. Constraints & Assumptions
+- Constraints: budget, timeline, mandatory technology stack...
+- Assumptions: conditions assumed to be true during planning
 
-## 8. Rủi ro sơ bộ (High-level Risks)
-| Rủi ro | Khả năng xảy ra | Mức ảnh hưởng | Hướng xử lý sơ bộ |
+## 8. High-Level Risks
+| Risk | Likelihood | Impact | Preliminary Mitigation |
 |---|---|---|---|
 | | | | |
 
-## 9. Phê duyệt
-| Vai trò | Tên | Ngày | Chữ ký/Trạng thái |
+## 9. Approvals
+| Role | Name | Date | Signature / Status |
 |---|---|---|---|
 | | | | |

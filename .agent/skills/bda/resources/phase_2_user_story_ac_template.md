@@ -1,62 +1,62 @@
 # User Stories & Acceptance Criteria
 
-> Tham chiếu: Agile Alliance. Mỗi User Story phải đạt tiêu chí **INVEST**: Independent, Negotiable, Valuable, Estimable, Small, Testable. Acceptance Criteria viết dạng Gherkin (Given/When/Then) để dễ chuyển thành test case.
+> Reference: Agile Alliance. Each User Story must satisfy the **INVEST** criteria: Independent, Negotiable, Valuable, Estimable, Small, Testable. Acceptance Criteria are written in Gherkin (Given/When/Then) format for easy conversion to test cases.
 
-## Format chuẩn
+## Standard Format
 
 ```
-US-XXX: [Tên ngắn gọn]
+US-XXX: [Short descriptive title]
 
-Là [vai trò người dùng],
-Tôi muốn [hành động/tính năng],
-Để [giá trị/lợi ích đạt được].
+As a [user role],
+I want to [action / feature],
+So that [value / benefit achieved].
 
-Liên kết: FR-XXX, BR-XXX
+Links: FR-XXX, BR-XXX
 
 Acceptance Criteria:
   AC1:
-    Given [điều kiện ban đầu]
-    When [hành động xảy ra]
-    Then [kết quả mong đợi]
+    Given [initial condition]
+    When [action occurs]
+    Then [expected result]
 
   AC2:
     Given ...
     When ...
     Then ...
 
-Độ ưu tiên: Must-have / Should-have / Could-have (MoSCoW)
-Story Points: (nếu team dùng estimation)
+Priority: Must-have / Should-have / Could-have (MoSCoW)
+Story Points: (if the team uses estimation)
 ```
 
-## Ví dụ minh họa
+## Illustrative Example
 
 ```
-US-012: Đăng nhập bằng email và mật khẩu
+US-012: Login with email and password
 
-Là người dùng đã đăng ký tài khoản,
-Tôi muốn đăng nhập bằng email và mật khẩu,
-Để truy cập vào các tính năng cá nhân hóa của hệ thống.
+As a registered user,
+I want to log in with my email and password,
+So that I can access the personalized features of the system.
 
-Liên kết: FR-008, BR-003
+Links: FR-008, BR-003
 
 Acceptance Criteria:
   AC1:
-    Given người dùng đã có tài khoản hợp lệ
-    When họ nhập đúng email và mật khẩu rồi nhấn "Đăng nhập"
-    Then hệ thống chuyển hướng vào trang Dashboard trong vòng 2 giây
+    Given the user has a valid account
+    When they enter the correct email and password and click "Login"
+    Then the system redirects them to the Dashboard within 2 seconds
 
   AC2:
-    Given người dùng nhập sai mật khẩu quá 5 lần liên tiếp
-    When họ thử đăng nhập lần thứ 6
-    Then hệ thống khóa tài khoản tạm thời 15 phút và hiển thị thông báo tương ứng
+    Given the user has entered an incorrect password more than 5 consecutive times
+    When they attempt to log in for the 6th time
+    Then the system temporarily locks the account for 15 minutes and displays a corresponding notification
 
-Độ ưu tiên: Must-have
+Priority: Must-have
 ```
 
-## Checklist tự kiểm khi viết xong 1 story (INVEST)
-- [ ] Independent — không phụ thuộc cứng vào story khác để có thể triển khai/test riêng
-- [ ] Negotiable — mô tả giá trị, không khóa cứng cách implement
-- [ ] Valuable — mang lại giá trị rõ ràng cho người dùng/business
-- [ ] Estimable — đủ rõ để team ước lượng effort
-- [ ] Small — làm được trong 1 sprint, nếu không phải tách nhỏ
-- [ ] Testable — Acceptance Criteria đủ cụ thể để viết test case trực tiếp
+## Self-Check Checklist When a Story Is Written (INVEST)
+- [ ] **Independent** — can be developed and tested independently of other stories
+- [ ] **Negotiable** — describes the value, does not lock in the implementation approach
+- [ ] **Valuable** — delivers clear value to the user or the business
+- [ ] **Estimable** — contains enough detail for the team to estimate effort
+- [ ] **Small** — completable within one sprint; if not, it must be split
+- [ ] **Testable** — Acceptance Criteria are specific enough to write test cases directly
